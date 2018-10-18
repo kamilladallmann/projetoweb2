@@ -1,4 +1,4 @@
 
-npm install
-nodemon server.js
+npm install //
+nodemon server.js // 
 http://localhost:3000/
