@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Register Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+		img {
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+            <h2>Registre-se </h2>	            
+            <form method="post" enctype="application/json" action="/cadastro">
+                <div class="form-group row">
+					<div class="col-md-1" style="float: left;">
+                        <label for="username" class="col-sm-2 col-form-label">Nome:</label>
+                    </div>
+                    <div class="col-sm-3" style="float: left;">
+                        <input type="text" name="username" placeholder="Insira seu nome" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+					<div class="col-md-1" style="float: left;">                  
+                        <label for="email" class="col-sm-2 col-form-label">E-mail:</label>
+                    </div>
+                    <div class="col-sm-3" style="float: left;">
+                        <input type="text" name="email" placeholder="Insira seu e-mail" class="form-control" required>
+                    </div>                  
+                </div>
+                
+                <div class="form-group row">
+					<div class="col-md-1" style="float: left;">                  
+                        <label for="senha" class="col-sm-2 col-form-label">Senha:</label>
+                    </div>
+                    <div class="col-sm-3" style="float: left;">
+                        <input type="senha" name="pass" placeholder="Insira sua senha" class="form-control" required>
+                    </div>                  
+                </div> 
+                <div class="form-group row">
+					<div class="col-md-1" style="float: left;">                  
+                        <label for="senha" class="col-sm-2 col-form-label">Confirmar Senha:</label>
+                    </div>
+                    <div class="col-sm-3" style="float: left;">
+                        <input type="senhaconfirm" name="pass" placeholder="Insira sua senha" class="form-control" required>
+                    </div>                  
+                </div> 
+                
+                <div class="form-group row">
+					<div class="col-lg-2" style="float: left;">              
+                       <button type="submit">Registrar</button>
+                    </div>
+                </div>
+            </form>           
+    
+        </div>
+	</div>
+</body>
+
+</html>

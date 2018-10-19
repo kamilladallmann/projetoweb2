@@ -13,4 +13,5 @@ detailSchema = new Schema( {
 }),
 Detail = mongoose.model('Detail', detailSchema);
 
+
 module.exports = Detail;

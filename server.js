@@ -10,7 +10,6 @@ var session = require('express-session');
 var tokenSecreto = false;
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 /*var upload = multer({ dest: 'uploads/' });*/
 mongoose.connect('mongodb://localhost/uploadFiles', { useMongoClient: true });
 
@@ -103,6 +102,7 @@ app.post('/delete', function (req, res) {
 
   Detail.findByIdAndRemove(req.body.prodId, function (err, data) {
     console.log(data);
+    //alert('Foto deletada com sucesso');
   })
   res.redirect('/');
 });
@@ -118,6 +118,13 @@ app.get('/buscar', function (req, res) {
     }
   })
 });
+
+//app.post('/cadastro', function (req, res) {
+
+   // console.log(data);
+   // res.sender('cadastro', {data: data});
+    
+//});
 
 app.post('/login', function (req, res, next) {
   console.log(req.body);
